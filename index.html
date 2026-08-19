@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <style type="text/tailwindcss">
       @theme {
@@ -14,14 +16,34 @@
         --color-jaune:#C2F732;
         --color-blanc:#FFFFFF;
         --color-links:#A3B899;
-        --color-section:#0B1F13;
+        --color-body:#0B1F13;
         --color-sectionBorder:#244A34;
-        --color-services:#142D1C;
+        --color-section:#142D1C;
       }
     </style>
     <title>portfolio responsive</title>
 </head>
-<body class="bg-slate-500">
+<body class="bg-body">
+    <header class="px-[30px] w-full h-[91px] border-[1px] border-sectionBorder">
+        <nav class="w-full h-full flex flex-row justify-between items-center">
+            <div class="flex flex-row font-Outfit gap-[15px]">
+                <div class="w-[36px] h-[36px] bg-jaune rounded-[8px] flex justify-center items-center">
+                    <span class="uppercase text-body font-extrabold">dc</span>
+                </div>
+                <p class="hidden lg:flex md:font-bold md:text-[20px] md:text-blanc capitalize">djoumessa <span class="text-jaune pl-[10px]">coryle</span></p>
+            </div>
+            <div class="hidden md:flex md:font-Manrope md:text-links md:font-medium md:text-[14px] md:capitalize md:gap-[25px]">
+                <a class="text-jaune" href="index.html">home</a>
+                <a href="#About">about</a>
+                <a href="#Service">services</a>
+                <a href="#Skills">skills</a>
+                <a href="#Projects">projects</a>
+                <a href="#Contact">contact</a>
+            </div>
+            <div class="hidden md:flex"><button class="md:w-[138px] md:h-[43px] md:bg-jaune md:font-Manrope md:rounded-[8px] md:font-bold md:text-[14px]">Download CV</button></div>
+            <div class="md:hidden text-[35px] text-jaune"><ion-icon name="grid"></ion-icon></div>
+        </nav>
+    </header>
     
 </body>
 </html>
