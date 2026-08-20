@@ -37,11 +37,11 @@
             </a>
             <div class="hidden md:flex md:font-Manrope md:text-links md:font-medium md:text-[14px] md:capitalize md:gap-[25px] 2xl:gap-[50px]">
                 <a class="text-jaune" href="index.html">home</a>
-                <a href="#About">about</a>
-                <a href="#Service">services</a>
-                <a href="#Skills">skills</a>
-                <a href="#Projects">projects</a>
-                <a href="#Contact">contact</a>
+                <a href="#about">about</a>
+                <a href="#service">services</a>
+                <a href="#skills">skills</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
             </div>
             <div class="hidden md:flex"><button class="md:w-[138px] md:h-[43px] md:bg-jaune md:font-Manrope md:rounded-[8px] md:font-bold md:text-[14px]">Download CV</button></div>
             <div class="md:hidden text-[35px] text-jaune"><ion-icon name="grid"></ion-icon></div>
@@ -91,7 +91,7 @@
             
         </section>
         <!-- section about -->
-        <section class="w-full h-auto  flex flex-col p-[40px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
+        <section id="about" class="w-full h-auto  flex flex-col p-[40px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
             <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
                 <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">About Me</span>
             </div>
@@ -130,14 +130,14 @@
         </section>
 
         <!-- section services -->
-        <section class="w-full h-auto  flex flex-col p-[40px] justify-center items-center gap-[30px]">
+        <section id="service" class="w-full h-auto  flex flex-col p-[40px] justify-center items-center gap-[30px]">
             <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
                 <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">My Services</span>
             </div>
             <div class="text-center">
                 <h2 class="font-Outfit text-blanc font-bold text-[20px] sm:text-[40px] md:text-[48px]">What I Bring to the Table</h2>
             </div>
-            <div class="flex flex-row gap-[20px] items-center w-full h-auto overflow-x-auto">
+            <div class="flex flex-row justify-between items-center w-full h-auto overflow-x-auto">
                 <div class="w-[400px] h-auto flex flex-col p-[20px] border-[1px] border-sectionBorder bg-section gap-[20px] flex-shrink-0">
                     <div class="w-[363px] h-[180px] bg-[url(./Assets/images/card-image.png)] bg-cover bg-center"></div>
                     <div class="flex flex-row items-center gap-[20px]">
@@ -179,14 +179,14 @@
             </div>
         </section>
         <!-- section skills -->
-        <section class=" w-full h-auto  flex flex-col p-[40px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
+        <section id="skills" class=" w-full h-auto  flex flex-col p-[40px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
             <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
                 <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Skills</span>
             </div>
             <div class="text-center">
                 <h2 class="font-Outfit text-blanc font-bold text-[20px] sm:text-[40px] md:text-[48px]">My Technical Toolbox</h2>
             </div>
-            <div class="w-full h-auto flex flex-col gap-[30px] overflow-x-auto">
+            <div class="w-full h-auto flex flex-col gap-[30px] justify-center items-center overflow-x-auto">
                 <!-- ligne 1 -->
                 <div class="flex flex-row gap-[30px]">
                     <!-- photoshop -->
@@ -275,9 +275,113 @@
                 </div>
             </div>
         </section>
+        <!-- section projects -->
+        <section id="projects" class="w-full h-auto  flex flex-col p-[40px] justify-center items-center gap-[30px]">
+            <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
+                <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Projects</span>
+            </div>
+            <div class="text-center">
+                <h2 class="font-Outfit text-blanc font-bold text-[20px] sm:text-[40px] md:text-[48px]">My Featured Projects</h2>
+            </div>
+            <div class="text-center">
+                <p class="font-Manrope font-normal text-[10px] sm:text-[16px] text-links">A curated collection of design templates, live applications, and tech concepts I have proudly launched.</p>
+            </div>
+            <div class="flex flex-row w-full h-auto justify-between">
+                <!-- projet 1 -->
+                <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">UI / UX Design</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">EcoSmart Landing Page</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Interactive prototype designed in Figma for an ecological sustainability startup, optimizing UX conversions by 35%.</p>
+                    </div>
+                </div>
+                <!-- projet 2 -->
+                 <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail1.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Full-Stack Dev</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">Dev Workspace Dashboard</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Integrated SaaS tracking solution utilizing Express and React, offering dev stats visualization in real-time.</p>
+                    </div>
+                </div>
+                <!-- projet 3 -->
+                 <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail2.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Graphic Design</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">Brand Banner Collection</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Custom branding assets crafted in Photoshop for an emerging local IT brand campaign with high visual impact.</p>
+                    </div>
+                </div>
 
+            </div>
 
-    </main>
-    
-</body>
-</html>
+            <!-- deuxieme section de projet -->
+             <div class="flex flex-row w-full h-auto justify-between">
+                <!-- projet 12 -->
+                <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">UI / UX Design</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">EcoSmart Landing Page</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Interactive prototype designed in Figma for an ecological sustainability startup, optimizing UX conversions by 35%.</p>
+                    </div>
+                </div>
+                <!-- projet 2 -->
+                 <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail1.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Full-Stack Dev</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">Dev Workspace Dashboard</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Integrated SaaS tracking solution utilizing Express and React, offering dev stats visualization in real-time.</p>
+                    </div>
+                </div>
+                <!-- projet 3 -->
+                 <div class="w-[400px] h-[370px] flex flex-col rounded-[16px] bg-section border-[1px] border-sectionBorder gap-[15px] overflow-hidden flex-shrink-0">
+                    <div>
+                        <img src="./Assets/images/project-thumbnail2.png" alt="project-thumbnail">
+                    </div>
+                    <div class=" ml-[20px]  w-[121px] h-[24px] rounded-[4px] bg-jaune/8 text-center">
+                        <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">Graphic Design</span>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <h3 class="font-Outfit font-bold text-[20px] text-blanc">Brand Banner Collection</h3>
+                    </div>
+                    <div class="pl-[20px] ">
+                        <p class="font-Manrope font-normal text-[14px] text-links">Custom branding assets crafted in Photoshop for an emerging local IT brand campaign with high visual impact.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
