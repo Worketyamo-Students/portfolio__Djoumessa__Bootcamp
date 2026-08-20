@@ -24,7 +24,7 @@
     </style>
     <title>portfolio responsive</title>
 </head>
-<body class="bg-body">
+<body class="bg-body overflow-x-hidden">
     <!-- section du header et de la nav -->
     <header class="px-[50px] w-full h-[91px] border-[1px] border-sectionBorder">
         <nav class="w-full h-full flex flex-row justify-between items-center">
@@ -90,7 +90,7 @@
             
         </section>
         <!-- section about -->
-        <section class="w-full  flex flex-col p-[50px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
+        <section class="w-full h-auto  flex flex-col p-[50px] bg-section border-[1px] border-sectionBorder justify-center items-center gap-[30px]">
             <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
                 <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">About Me</span>
             </div>
@@ -99,7 +99,7 @@
             </div>
             <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] md:gap-[30px]">
                 <!-- about-image -->
-                <div class="sm:w-[480px] sm:h-[400px] md:w-[600px] md:h-[340px] lg:h-[400px] w-[240px] h-[200px] rounded-[8px] sm:rounded-[16px] border-[1px] border-sectionBorder bg-[url(./Assets/images/about-image.png)] bg-cover bg-center"></div>
+                <div class="sm:w-[480px] sm:h-[400px] md:w-[600px] md:h-[340px] lg:h-[400px] xl:h-[350px] 2xl:h-[300px] w-[240px] h-[200px] rounded-[8px] sm:rounded-[16px] border-[1px] border-sectionBorder bg-[url(./Assets/images/about-image.png)] bg-no-repeat bg-cover bg-center"></div>
                 <!-- about-text -->
                 <div class=" flex flex-col w-full h-auto gap-[20px]">
                     <div>
@@ -127,6 +127,58 @@
                 </div>
             </div>
         </section>
+
+        <!-- section services -->
+        <section class="w-full h-auto  flex flex-col p-[50px] justify-center items-center gap-[30px]">
+            <div class="w-[102px] h-[28px] rounded-[99px] bg-jaune/8 border-[1px] border-jaune/25 text-center">
+                <span class="uppercase font-Manrope font-semibold text-[12px] text-jaune">My Services</span>
+            </div>
+            <div class="text-center">
+                <h2 class="font-Outfit text-blanc font-bold text-[20px] sm:text-[40px] md:text-[48px]">What I Bring to the Table</h2>
+            </div>
+            <div class="flex flex-row gap-[20px] items-center w-full h-auto overflow-x-auto">
+                <div class="w-[400px] h-auto flex flex-col p-[20px] border-[1px] border-sectionBorder bg-section gap-[20px] flex-shrink-0">
+                    <div class="w-[363px] h-[180px] bg-[url(./Assets/images/card-image.png)] bg-cover bg-center"></div>
+                    <div class="flex flex-row items-center gap-[20px]">
+                        <div class="flex w-[40px] h-[40px] rounded-[8px] bg-sectionBorder justify-center items-center">
+                            <img src="./Assets/images/paintbrush.png" alt="paintbrush">
+                        </div>
+                        <span class="font-Outfit font-bold text-[20px] text-blanc">Graphic Design</span>
+                    </div>
+                    <div>
+                        <p class="font-Manrope font-normal text-[14px] text-links">With advanced Photoshop capabilities, I formulate custom promotional content, print materials, posters, vector designs, and high-converting branding components.</p>
+                    </div>
+                </div>
+
+                <div class="w-[400px] h-auto flex flex-col p-[20px] border-[1px] border-sectionBorder bg-section gap-[20px] flex-shrink-0">
+                    <div class="w-[363px] h-[180px] bg-[url(./Assets/images/card-image2.png)] bg-cover bg-center"></div>
+                    <div class="flex flex-row items-center gap-[20px]">
+                        <div class="flex w-[40px] h-[40px] rounded-[8px] bg-sectionBorder justify-center items-center">
+                            <img src="./Assets/images/layers.png" alt="layers">
+                        </div>
+                        <span class="font-Outfit font-bold text-[20px] text-blanc">UI / UX Design</span>
+                    </div>
+                    <div>
+                        <p class="font-Manrope font-normal text-[14px] text-links">Translating wireframes and user personas into breathtaking high-fidelity interactive mockups in Figma, built for usability, visual rhythm, and consistent components.</p>
+                    </div>
+                </div>
+
+                <div class="w-[400px] h-auto flex flex-col p-[20px] border-[1px] border-sectionBorder bg-section gap-[20px] flex-shrink-0">
+                    <div class="w-[363px] h-[180px] bg-[url(./Assets/images/card-image3.png)] bg-cover bg-center"></div>
+                    <div class="flex flex-row items-center gap-[20px]">
+                        <div class="flex w-[40px] h-[40px] rounded-[8px] bg-sectionBorder justify-center items-center">
+                            <img src="./Assets/images/terminal.png" alt="terminal">
+                        </div>
+                        <span class="font-Outfit font-bold text-[20px] text-blanc">Full-Stack Dev</span>
+                    </div>
+                    <div>
+                        <p class="font-Manrope font-normal text-[14px] text-links">Formulating performant frontend architectures with React and Tailwind CSS, coupled with robust server environments using Node.js, Express, and structured databases.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     
 </body>
